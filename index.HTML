@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Target System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Target System</h1>
+        <form id="employeeForm">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" required>
+            
+            <label for="employeeSalary">Current Salary:</label>
+            <input type="number" id="employeeSalary" required>
+            
+            <label for="salaryTarget">Salary Target:</label>
+            <input type="number" id="salaryTarget" required>
+            
+            <button type="submit">Add Employee</button>
+        </form>
+        <h2>Employee List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Current Salary</th>
+                    <th>Salary Target</th>
+                </tr>
+            </thead>
+            <tbody id="employeeList">
+                <!-- Employee rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
